@@ -1,0 +1,65 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #90d0f7, #90c5f7,  #cae0f7);
+    color: hsl(0, 0%, 20%);
+}
+header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;  /* alto del header*/
+}
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header li{
+    display: block;
+    color: #013a74;
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding: 0.4rem;
+}
+header li:hover{
+    background-color: #bdd7f1;
+    color: #032445;
+}
+
+
+main {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+}
+.about_me{
+    width: 25vw;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+}
+.profile_pic{
+    margin-top: 20%;
+}
+
+.about_me svg{
+    margin: 0.5rem;
+}
+
+footer {
+    background: #eee;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+#cartel{
+    border: 1px solid black;
+    margin-right: 2vw;
+}
+

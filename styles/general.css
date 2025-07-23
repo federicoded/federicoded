@@ -24,8 +24,14 @@ header li{
     margin-right: 2rem;
     margin-left: 2rem;
     padding: 0.4rem;
+    text-decoration-line: underline;
 }
 header li:hover{
     background-color: #bdd7f1;
     color: #032445;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit;       
 }

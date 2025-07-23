@@ -6,22 +6,40 @@ body {
     user-select: none;
 }
 
-
 main {
     height: 240vh;
     display: flex;
     justify-content: center;
 }
 .welcome{
-    width: 25vw;
+    width: fit-content;
     text-align: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     position: absolute;
-    right: 10vw;
+    right: 5vw;
     top: 20vh;
 }
+.hi{
+    margin-top: 7rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+
+.hi:hover{
+    transition: background-color 0.5s ease;
+    background-color: #ffffff;
+    color: rgb(3, 6, 68);
+}
+.hi:active{
+    background-color: #ffffff;
+}
+
 .about_me{
     width: 25vw;
     height: 100vh;
@@ -49,8 +67,6 @@ main {
     background-color: transparent;
     background: radial-gradient(circle, #bdd8f0 100%);
     background-size: 0% 0%;
-    background-repeat: no-repeat;
-    background-position: center;
     transition: background-size 0.5s ease, color 0.5s ease;
 }
 
@@ -94,21 +110,13 @@ footer {
     left:5vw;
     bottom:0;
     max-width: 70vw;
-
+    z-index: 980;
     transition: transform 0.1s linear;
 }
 
-@keyframes entrarDesdeIzquierda {
-    0% {
-    transform: translate(-100vw, 10vh);
-    }
-    100% {
-    transform: translate(0, 0);
-    height: 95vh;
-    }
-}
 .presentation{
     align-items:baseline;
+    font-size: 1.4rem;
 }
 .presentation h1{
     font-family:sans-serif;
@@ -116,9 +124,21 @@ footer {
 }
 .presentation p{
     font-family:sans-serif;
-    font-size: 1.4rem;
     text-align: left;
 }
 .presentation ul{
     list-style: none;
+}
+.presentation li{
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    padding: 0.5rem;
+    text-decoration-line: underline;
+}
+.presentation li:hover{
+    transition: background-color 0.5s ease;
+    background-color: #90d0f7;
+}
+.presentation li:active{
+    background-color: #ffffff;
 }

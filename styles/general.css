@@ -1,0 +1,31 @@
+header {
+    display:flex;
+    position: fixed;
+    height: fit-content;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 9999;
+    justify-content: center;
+}
+
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header li{
+    display: block;
+    color: #013a74;
+    text-align: center;
+    height: fit-content;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding: 0.4rem;
+}
+header li:hover{
+    background-color: #bdd7f1;
+    color: #032445;
+}

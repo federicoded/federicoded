@@ -2,54 +2,82 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #90d0f7, #90c5f7,  #cae0f7);
-    color: hsl(0, 0%, 20%);
-}
-header {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 5vh;  /* alto del header*/
-}
-header ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-header li{
-    display: block;
-    color: #013a74;
-    text-align: center;
-    margin-right: 2rem;
-    margin-left: 2rem;
-    padding: 0.4rem;
-}
-header li:hover{
-    background-color: #bdd7f1;
-    color: #032445;
+    background: linear-gradient(to bottom, #90d0f7, #90c5f7,  #f3f7ca, #e8c9f0);
+    user-select: none;
 }
 
 
 main {
-    height: 95vh;
+    height: 240vh;
     display: flex;
     justify-content: center;
 }
-.about_me{
+.welcome{
     width: 25vw;
     text-align: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-    border: 1px solid blue;
+    position: absolute;
+    right: 10vw;
+    top: 20vh;
 }
+.about_me{
+    width: 25vw;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10vw;
+    top: 140vh;
+}
+
 .profile_pic{
     margin-top: 20%;
 }
 
+.logo_container{
+    padding:5px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 40%;
+    display: inline-block;
+    margin: 2%;
+    background-color: transparent;
+    background: radial-gradient(circle, #bdd8f0 100%);
+    background-size: 0% 0%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-size 0.5s ease, color 0.5s ease;
+}
+
+.logo_container:hover {
+  background-size: 300% 300%;
+}
+
+.logo_container:active{
+    background: radial-gradient(circle, #f1f6fa 100%);
+    
+}
+
 .about_me svg{
     margin: 0.5rem;
+}
+
+.presentation{
+    width: 40vw;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 15vw;
+    top: 140vh;
 }
 
 footer {
@@ -58,8 +86,39 @@ footer {
     padding: 1rem;
     font-size: 0.9rem;
 }
+
 #cartel{
-    border: 1px solid black;
     margin-right: 2vw;
+    height: 85vh;
+    position:fixed;
+    left:5vw;
+    bottom:0;
+    max-width: 70vw;
+
+    transition: transform 0.1s linear;
 }
 
+@keyframes entrarDesdeIzquierda {
+    0% {
+    transform: translate(-100vw, 10vh);
+    }
+    100% {
+    transform: translate(0, 0);
+    height: 95vh;
+    }
+}
+.presentation{
+    align-items:baseline;
+}
+.presentation h1{
+    font-family:sans-serif;
+    font-size: 2.5rem;
+}
+.presentation p{
+    font-family:sans-serif;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.presentation ul{
+    list-style: none;
+}

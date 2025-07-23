@@ -1,0 +1,21 @@
+body {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #90d0f7, #bfd1e2,  #ffffff, #ffffff);
+    user-select: none;
+    padding: 4%;
+}
+header{
+    background-color: #90d0f7;
+}
+.main_header{
+    border: 1px solid black;
+    padding:1rem;
+    margin: 1rem;
+}
+
+.project{
+    list-style: none;
+    border: 1px solid blue;
+}

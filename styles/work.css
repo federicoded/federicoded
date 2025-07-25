@@ -36,6 +36,7 @@ header{
     background-color: #fcf2dfc2;
 }
 .project:active{
+    transition: background-color 0.0s;
     background-color: #ffffff;
 }
 .project .project_name, .project .description{

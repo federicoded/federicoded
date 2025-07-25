@@ -1,5 +1,7 @@
 
 window.scrollTo(0, 0);
+console.log(window.devicePixelRatio); // Suele ser > 1 en celulares modernos
+
 
 window.addEventListener('scroll', function () {
     const scrollPos = window.scrollY;

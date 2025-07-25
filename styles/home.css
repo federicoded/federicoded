@@ -1,13 +1,22 @@
+@media (orientation: portrait) {
+  /* Teléfono en vertical */
+}
+
+@media (orientation: landscape) {
+  /* Tablet horizontal o monitor */
+}
+
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #90d0f7, #90c5f7,  #f3f7ca, #e8c9f0);
+    background: linear-gradient(to bottom, #90d0f7, #90c5f7,  #f3f7ca, #e1c9f0);
     user-select: none;
+    height: fit-content;
 }
 
 main {
-    height: 240vh;
+    height: 230vh;
     display: flex;
     justify-content: center;
 }
@@ -65,18 +74,16 @@ main {
     display: inline-block;
     margin: 2%;
     background-color: transparent;
-    background: radial-gradient(circle, #bdd8f0 100%);
-    background-size: 0% 0%;
-    transition: background-size 0.5s ease, color 0.5s ease;
 }
 
 .logo_container:hover {
-  background-size: 300% 300%;
+    background-color: #bdd8f0;
+    transition: background-color 0.5s ease;
 }
 
 .logo_container:active{
-    background: radial-gradient(circle, #f1f6fa 100%);
-    
+    transition: background-color 0.0s ;
+    background-color: #FFFFFF;
 }
 
 .about_me svg{
@@ -97,8 +104,10 @@ main {
 }
 
 footer {
-    background: #eee;
+    background-color: transparent;
     text-align: center;
+    height: 20vh;
+    border: 1px solid blue;
     padding: 1rem;
     font-size: 0.9rem;
 }
@@ -137,7 +146,7 @@ footer {
 }
 .presentation li:hover{
     transition: background-color 0.5s ease;
-    background-color: #90d0f7;
+    background-color: #bdd8f0;
 }
 .presentation li:active{
     background-color: #ffffff;

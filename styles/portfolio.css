@@ -1,0 +1,66 @@
+body {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, 
+    #90d0f7 0%, 
+    #F0F2F7 30%);
+    user-select: none;
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+header{
+    background-color: #90d0f7;
+}
+.main_header{
+    padding:1rem;
+    margin: 1rem;
+    color: rgb(0, 8, 51);
+}
+.main_header h1{
+    font-size: 2.5rem;
+}
+p{
+    font-size: 1.2rem;
+}
+.division{
+    background-color: #eceae638;
+    border-radius: 20px;
+    padding:1rem;
+    padding-inline: 2rem;
+    margin-bottom: 3rem;
+    transition: background-color 0.5s ease;
+}
+.division:hover{
+    background-color: #eceae6;
+}
+.tools ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: auto;
+}
+.tools li{
+    margin-inline:3rem;
+}
+.tool_logo{
+    height: 5rem;
+}
+
+.texto{
+    width: 50%;
+}
+.imagen{
+    text-align: right;
+}
+#bocetos{
+    width: 80%;
+}
+.challenge{
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    padding-inline: 2rem;
+}

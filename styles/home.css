@@ -42,7 +42,7 @@ main {
 
 .hi:hover{
     transition: background-color 0.5s ease;
-    background-color: #ffffff;
+    background-color: #589ea5a2;
     color: rgb(3, 6, 68);
 }
 .hi:active{

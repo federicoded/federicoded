@@ -16,7 +16,7 @@ body {
 }
 
 main {
-    height: 230vh;
+    height: 220vh;
     display: flex;
     justify-content: center;
 }
@@ -103,15 +103,6 @@ main {
     top: 140vh;
 }
 
-footer {
-    background-color: transparent;
-    text-align: center;
-    height: 20vh;
-    border: 1px solid blue;
-    padding: 1rem;
-    font-size: 0.9rem;
-}
-
 #cartel{
     margin-right: 2vw;
     height: 85vh;
@@ -150,4 +141,18 @@ footer {
 }
 .presentation li:active{
     background-color: #ffffff;
+}
+footer{
+    padding: 0;
+    height: fit-content;
+    margin: 0;
+}
+footer div{
+    margin: 0;
+}
+footer svg{
+  position: relative;
+  bottom: -0.5rem; /* o el valor que necesites para que sobresalga */
+  left: 0;
+  width: 100%;
 }

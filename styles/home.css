@@ -10,9 +10,10 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #90d0f7, #90c5f7,  #f3f7ca, #e1c9f0);
+    background: linear-gradient(to bottom, #67bfde, #90c5f7,  #f3f7ca, #e1c9f0);
     user-select: none;
-    height: fit-content;
+    max-height: 350vh;
+    overflow-x: hidden;
 }
 
 main {
@@ -30,23 +31,20 @@ main {
     right: 5vw;
     top: 20vh;
 }
+
 .hi{
     margin-top: 7rem;
     border-radius: 15px;
     font-size: 1.5rem;
     padding: 0.5rem;
     border: none;
-    color: white;
     background-color: transparent;
 }
-
-.hi:hover{
-    transition: background-color 0.5s ease;
-    background-color: #589ea5a2;
-    color: rgb(3, 6, 68);
+.hi svg{
+    overflow: visible;
 }
-.hi:active{
-    background-color: #ffffff;
+.hi:active .cloud_hi_cloud{
+    fill: #67bfde;
 }
 
 .about_me{
@@ -103,7 +101,7 @@ main {
     top: 140vh;
 }
 
-#cartel{
+.cartel{
     margin-right: 2vw;
     height: 85vh;
     position:fixed;
@@ -111,7 +109,6 @@ main {
     bottom:0;
     max-width: 70vw;
     z-index: 980;
-    transition: transform 0.1s linear;
 }
 
 .presentation{
@@ -152,7 +149,15 @@ footer div{
 }
 footer svg{
   position: relative;
-  bottom: -0.5rem; /* o el valor que necesites para que sobresalga */
+  bottom: -0.5rem;
   left: 0;
   width: 100%;
 }
+.container_pajaritos{
+    height: 20vh;
+    overflow: hidden;
+    position:absolute;
+    top: 10vh;
+    right:-15vw;
+}
+

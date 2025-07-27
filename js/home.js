@@ -1,9 +1,11 @@
 
 window.scrollTo(0, 0);
-console.log(window.devicePixelRatio); // Suele ser > 1 en celulares modernos
+console.log(window.devicePixelRatio);
 
 
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll', moverCartelConScroll);
+
+function moverCartelConScroll() {
     const scrollPos = window.scrollY;
 
     const cartel = document.getElementById('cartel');
@@ -20,4 +22,34 @@ window.addEventListener('scroll', function () {
 
     cartel.style.transform = `translateX(${desplazamiento*2}px)`;
 
+}
+
+/*
+const 
+
+CARTEL = document.getElementById("cartel"),
+WELCOME = document.getElementById("welcome"),
+ABOUT_ME = document.getElementById("about_me"),
+PRESENTATION = document.getElementById("presentation"),
+CALLE = document.getElementById("calle"),
+PAJAROS = document.getElementById("container_pajaritos");
+
+const LINKS = document.querySelectorAll(".enlace");
+LINKS.forEach(enlace => {
+    enlace.addEventListener("click", abandonar);
 });
+
+async function abandonar(event) {
+  event.preventDefault();
+    window.removeEventListener('scroll', moverCartelConScroll);
+  const href = event.currentTarget.href; 
+  /// Aca va el overlay que tapa todo y se tiene que destapar cuando inicia cada pagina.
+
+  setTimeout(() => {
+    window.location.href = href;
+  }, 2500);
+}
+*/
+
+
+ 

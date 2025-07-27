@@ -1,0 +1,74 @@
+#welcome_cloud{
+    animation: flotar 60s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translateY(-6px) rotate(2deg) scale(1.2);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0deg) scale(1.4);
+  }
+  75% {
+    transform: translateY(4px) rotate(3deg) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+
+@keyframes vuelo_pajaritos {
+    0% { right:-15vw; }
+    100% { right: 120vw; }
+}
+
+.container_pajaritos{
+    animation: vuelo_pajaritos 30s linear infinite;
+}
+
+@keyframes apuntar{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(80px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.hi:hover .hi_arrow{
+    animation: apuntar 1s ease-in-out infinite;
+}
+
+.hi_cloud{
+    animation: flotar_pequenho 30s ease-in-out infinite;
+}
+@keyframes flotar_pequenho {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  40% {
+    transform: translateY(3px) rotate(1deg) scale(1.2);
+  }
+  75% {
+    transform: translateY(-2px) rotate(-1deg) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+.salir_derecha{
+    transition: transform 3s ease;
+    transform: translateX(100vw);
+}
+.salir_abajo{
+    transition: transform 3s ease;
+    transform: translateY(50vw);
+}

@@ -24,6 +24,27 @@ function moverCartelConScroll() {
 
 }
 
+const ratio_de_smartphone = window.matchMedia('(max-aspect-ratio: 38/29)');
+
+function actualizarSVG() {
+    const relacion = window.innerWidth / window.innerHeight;
+    const objeto_pajaritos = document.getElementById("pajaritos");
+
+    if (relacion > 38/29) {
+        objeto_pajaritos.style.width = "5.5vw";
+        objeto_pajaritos.data = "assets/pajaritos.svg";
+
+    } else {
+        objeto_pajaritos.style.width = "3vw";
+        objeto_pajaritos.data = "assets/plane.svg";
+    }
+}
+
+
+window.addEventListener("load", actualizarSVG);
+window.addEventListener("resize", actualizarSVG);
+
+
 /*
 const 
 

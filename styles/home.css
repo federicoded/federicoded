@@ -1,6 +1,4 @@
-@media (orientation: portrait) {
-  
-}
+
 
 @media (orientation: landscape) {
 
@@ -25,135 +23,146 @@ main {
     max-width: 70vw;
     z-index: 980;
 }
-    .welcome{
-        width: 30vw;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        right: 7vw;
-        top: 20vh;
-    }
-    .welcome_cloud{
-        width: 100%;
-    }
+.welcome{
+    width: 30vw;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 7vw;
+    top: 15vh;
+}
 
-    .hi{
-        margin-top: 7rem;
-        border-radius: 15px;
-        font-size: 1.5vw;
-        padding: 0.5rem;
-        border: none;
-        background-color: transparent;
-    }
-    .hi svg{
-        overflow: visible;
-    }
-    .hi:active .cloud_hi_cloud{
-        fill: #67bfde;
-    }
+.hi{
+    position: absolute;
+    top:50%;
+    left: 75%;
+}
+.hi svg{
+    overflow: visible;
+}
+.hi:active .cloud_hi_cloud{
+    fill: #67bfde;
+}
 
-    .about_me{
-        width: 25vw;
-        height: 100vh;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        left: 10vw;
-        top: 140vh;
-    }
+.about_me{
+    width: 30vw;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 6vw;
+    top: 140vh;
+}
 
-    .profile_pic{
-        margin-top: 20%;
-    }
+.profile_pic{
+    margin-top: 20%;
+}
+.logo{
+    height: 8vh;
+    margin: 0.4rem;
+}
 
-    .logo_container{
-        padding:5px;
-        width: fit-content;
-        height: fit-content;
-        border-radius: 40%;
-        display: inline-block;
-        margin: 2%;
-        background-color: transparent;
-    }
+.logo_container{
+    padding:5px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 40%;
+    display: inline-block;
+    margin: 0;
+    background-color: transparent;
+}
+.logo_container:hover {
+    background-color: #bdd8f0;
+    transition: background-color 0.5s ease;
+}
+.logo_container:active{
+    transition: background-color 0.0s ;
+    background-color: #FFFFFF;
+}
 
-    .logo_container:hover {
-        background-color: #bdd8f0;
-        transition: background-color 0.5s ease;
-    }
 
-    .logo_container:active{
-        transition: background-color 0.0s ;
-        background-color: #FFFFFF;
-    }
+.presentation{
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10vw;
+    top: 140vh;
+    align-items:baseline;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.5vw, 3rem);
+}
 
-    .about_me svg{
-        margin: 0.5rem;
-    }
+.presentation h1{
+    font-size: clamp(2rem, 2.5vw, 5rem);
+}
+.presentation p{
+    text-align: left;
+}
 
-    .presentation{
-        width: 50vw;
-        height: 100vh;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        right: 15vw;
-        top: 140vh;
-    }
+.presentation li{
+    margin:0;
+    border-radius: 15px;
+    padding: 0.7rem;
+    text-decoration-line: underline;
+}
+.presentation li:hover{
+    transition: background-color 0.5s ease;
+    background-color: #bdccf0;
+}
+.presentation li:active{
+    background-color: #ffffff;
+}
+footer{
+    padding: 0;
+    height: fit-content;
+    margin: 0;
+}
 
-    .presentation{
-        align-items:baseline;
-        font-weight: 400;
-        font-size: clamp(1rem, 1.7vw, 3rem);
-    }
-    .presentation h1{
-        font-size: 2.5vw;
-    }
-    .presentation p{
-        text-align: left;
-    }
-    .presentation ul{
-        list-style: none;
-    }
-    .presentation li{
-        margin-bottom: 1rem;
-        border-radius: 15px;
-        padding: 0.5rem;
-        text-decoration-line: underline;
-    }
-    .presentation li:hover{
-        transition: background-color 0.5s ease;
-        background-color: #bdd8f0;
-    }
-    .presentation li:active{
-        background-color: #ffffff;
-    }
-    footer{
-        padding: 0;
-        height: fit-content;
-        margin: 0;
-    }
-    footer div{
-        margin: 0;
-    }
-    footer svg{
+footer svg{
     position: relative;
     bottom: -0.5rem;
     left: 0;
     width: 100%;
-    }
-    .container_pajaritos{
-        height: 20vh;
-        overflow: hidden;
-        position:absolute;
-        top: 10vh;
-        right:-15vw;
-    }
+}
+.container_pajaritos{
+    height: 20vh;
+    overflow: hidden;
+    position:absolute;
+    top: 10vh;
+    right:-15vw;
+}
 
+@media (max-aspect-ratio: 38/29) {
+    .welcome{
+        width: 60vw;
+        right: 25%;
+        top: 15vh;
+    }
+    main {
+        height: 180vh;
+    }
+    .about_me{
+        top: 100vh;
+    }
+    .presentation{
+        top: 90vh;
+    }
+}
+
+@media (max-aspect-ratio: 8/9) {
+    .hi{
+        top:40%;
+        left: 45%;
+        z-index: 999;
+    }
+}

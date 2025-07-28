@@ -3,6 +3,7 @@ body {
     padding: 1%;
     padding-left: 10%;
     padding-right: 10%;
+    font-family: "Montserrat", sans-serif;
 }
 header{
     background-color: #71ddf3;
@@ -11,11 +12,11 @@ header{
     padding:1rem;
     color: rgb(0, 8, 51);
 }
-.main_header h1{
-    font-size: 2.5rem;
+h1{
+    font-size: clamp(2rem, 3vw, 4rem);
 }
 .main_header p{
-    font-size: 1.5rem;
+    font-size: clamp(1.3rem, 1.5vw, 2rem);
 }
 
 .project{
@@ -34,30 +35,20 @@ header{
     transition: background-color 0.0s;
     background-color: #ffffff;
 }
-.project .project_name, .project .description{
-    float: left;
-    max-width: 58%;
-    height: 100%;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
 
-}
 .project_name{
     width: 40%;
     align-items: center;
 }
-h2{
-    font-size: 2rem;
-}
+
 .subtitle{
-    font-size: 1.5rem;
+    font-size: clamp(1.6rem, 2.5vw, 3rem);
 }
 .description{
     text-align: left;
 }
 .project p{
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
 }
 .items{
     font-size: 1.3rem;
@@ -74,4 +65,41 @@ hr{
     margin:20px; 
     margin-left: 25%; 
     margin-right: 25%;
+}
+
+
+@media (max-aspect-ratio: 38/29) {
+    .project{
+        height: fit-content;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1rem;
+        padding: 3vw;
+        padding-top:0;
+        width: 100%;
+    }
+    .main{
+        width: 100%;
+    }
+
+    .project li{
+        float: none;
+        width: 100%;
+    }
+    .logo{
+        width: 50%;
+    }
+
+}
+
+@media (min-aspect-ratio: 38/29){
+    .project li{
+        float: left;
+        max-width: 58%;
+        height: 100%;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+    }
 }

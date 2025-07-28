@@ -40,15 +40,11 @@ p{
     height: 5rem;
 }
 
-.texto{
-    width: 50%;
-}
 .imagen{
-    text-align: right;
+    width: 50%;
+
 }
-#bocetos{
-    width: 80%;
-}
+
 h2{
     font-size: 2rem;
     text-align: center;
@@ -66,23 +62,72 @@ h3{
     font-size: 1.4rem;
     text-align: center;
 }
-.challenge ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 1rem;
-    gap:1.5rem;
+
+hr{
+    width: 50%;
 }
-.challenge .description{
-    width: 60%;
-}
-.illustration{
-    width: 40%;
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-}
+
 .conclusion{
     font-size: 1.5rem;
+}
+
+@media (min-aspect-ratio: 38/29){
+    .texto{
+        float: right;
+        width: 50%;
+    }
+    img{
+        width: 80%;
+    }
+    .challenge ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 1rem;
+        gap:1.5rem;
+    }
+    .challenge .description{
+        width: 60%;
+    }
+    .illustration{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+}
+@media (max-aspect-ratio: 38/29) {
+    body {
+        padding: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .division{
+        padding-inline: 2vw;
+    }
+    .imagen{
+        width: 100%;
+    }
+    .challenge{
+        padding: 0;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        padding-inline: 2vw;
+    }
+    .challenge ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .challenge li{
+        width: 100%;
+    }
+
+    .challenge .illustration { order: 2; }
+    .challenge .description { order: 1; }
+
+
 }

@@ -5,6 +5,7 @@ body {
     padding-right: 10%;
     font-family: "Montserrat", sans-serif;
 }
+
 header{
     background-color: #71ddf3;
 }
@@ -83,7 +84,7 @@ hr{
         width: 100%;
     }
 
-    .project li{
+    .project .project_name, .project .description{
         float: none;
         width: 100%;
     }
@@ -94,7 +95,7 @@ hr{
 }
 
 @media (min-aspect-ratio: 38/29){
-    .project li{
+    .project .project_name, .project .description{
         float: left;
         max-width: 58%;
         height: 100%;

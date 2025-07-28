@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #71ddf3, #bfd1e2,  #ffffff);
+    background-color: linear-gradient(to bottom, #71ddf3, #bfd1e2,  #ffffff);
     padding: 1%;
     padding-left: 10%;
     padding-right: 10%;
@@ -70,6 +70,9 @@ hr{
 
 
 @media (max-aspect-ratio: 38/29) {
+    body{
+        height: 160vh;
+    }
     .project{
         height: fit-content;
         text-align: center;

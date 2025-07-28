@@ -105,6 +105,7 @@ hr{
     }
 }
 @media (max-aspect-ratio: 38/29) {
+    /*phone*/
     body {
         padding: 3%;
         padding-left: 5%;
@@ -113,9 +114,8 @@ hr{
     .division{
         padding-inline: 2vw;
     }
-    .imagen{
-        width: 100%;
-    }
+    .imagen{ width: 100%;}
+
     .challenge{
         padding: 0;
         margin-top: 5vh;
@@ -129,12 +129,24 @@ hr{
         flex-direction: column;
         width: 100%;
     }
-    .challenge li{
-        width: 100%;
-    }
+    .challenge li{ width: 100%;}
 
     .challenge .illustration { order: 2; }
     .challenge .description { order: 1; }
 
+    .tools{
+        text-align: center;
+    }
+    .tools ul{
+        list-style: none;
+        display:block;
+        flex-direction: column;
+        justify-content: center;
+        overflow: auto;
+        gap:3rem;
+    }
+    .tool_logo{
+        height: 5rem;
+    }
 
 }

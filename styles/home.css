@@ -143,13 +143,14 @@ footer svg{
 }
 
 @media (max-aspect-ratio: 38/29) {
+    /* phone */
     .welcome{
         width: 60vw;
         right: 25%;
         top: 15vh;
     }
     main {
-        height: 180vh;
+        height: 190vh;
     }
     .about_me{
         top: 100vh;
@@ -157,9 +158,20 @@ footer svg{
     .presentation{
         top: 90vh;
     }
+    .hi{
+        right: 50%;
+        transform: translateX(-50%);
+    }
+    footer svg{
+        width: 150%;
+    }
+    .container_pajaritos{
+        overflow: visible;
+    }
 }
 
 @media (max-aspect-ratio: 8/9) {
+    /* pantalla angosta */
     .hi{
         top:40%;
         left: 45%;

@@ -1,14 +1,16 @@
 
-
-@media (orientation: landscape) {
-
-
-}
-
 body {
-    background: linear-gradient(to bottom, #67bfde, #90c5f7,  #f3f7ca, #e1c9f0);
+    background: linear-gradient(to bottom, #4f8fcf, #90c5f7,  #feedc1, #e4a872);
 }
-
+header{
+    background-color: transparent;
+}
+.hover_fondo_oscuro:hover {
+    background-color: #234970c3;
+}
+.hover_fondo_claro:hover {
+    background-color: #5770ff3c;
+}
 main {
     height: 220vh;
     display: flex;
@@ -76,8 +78,8 @@ main {
     margin: 0;
     background-color: transparent;
 }
-.logo_container:hover {
-    background-color: #bdd8f0;
+.logo_container:hover , .presentation li:hover{
+    background-color: #5771ff5c;
     transition: background-color 0.5s ease;
 }
 .logo_container:active{
@@ -115,10 +117,7 @@ main {
     padding: 0.7rem;
     text-decoration-line: underline;
 }
-.presentation li:hover{
-    transition: background-color 0.5s ease;
-    background-color: #bdccf0;
-}
+
 .presentation li:active{
     background-color: #ffffff;
 }
@@ -143,7 +142,6 @@ footer svg{
 }
 
 @media (max-aspect-ratio: 38/29) {
-    /* phone */
     .welcome{
         width: 60vw;
         right: 25%;
@@ -158,23 +156,29 @@ footer svg{
     .presentation{
         top: 90vh;
     }
-    .hi{
-        right: 50%;
-        transform: translateX(-50%);
-    }
     footer svg{
         width: 150%;
     }
     .container_pajaritos{
         overflow: visible;
     }
+    .cartel{
+        max-width: 80vw;
+        left: 2vw;
+    }
+    .hi{
+        left: 82%;
+    }
 }
 
 @media (max-aspect-ratio: 8/9) {
-    /* pantalla angosta */
     .hi{
         top:40%;
-        left: 45%;
+        left: 40%;
         z-index: 999;
+    }
+    .cartel{
+        max-width: 90vw;
+        left: 2vw;
     }
 }

@@ -1,13 +1,14 @@
 body {
-    background-color: linear-gradient(to bottom, #71ddf3, #bfd1e2,  #ffffff);
+    background: linear-gradient(to bottom, #4f8fcf,  #ffffff);
     padding: 1%;
     padding-left: 10%;
     padding-right: 10%;
     font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
 }
 
 header{
-    background-color: #71ddf3;
+    background-color: #4f8fcf;
 }
 .main_header{
     padding:1rem;

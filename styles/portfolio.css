@@ -3,9 +3,6 @@ body {
     padding-left: 10%;
     padding-right: 10%;
 }
-header{
-    background-color: #90d0f7;
-}
 .main_header{
     padding:1rem;
     margin: 1rem;
@@ -56,7 +53,7 @@ h2{
 h3{
     font-size: 1.5rem;
 }
- h4{
+h4{
     font-size: 1.4rem;
     text-align: center;
 }
@@ -138,12 +135,7 @@ hr{
         text-align: center;
     }
     .tools ul{
-        list-style: none;
-        display:block;
-        flex-direction: column;
-        justify-content: center;
-        overflow: auto;
-        gap:3rem;
+        justify-content:flex-start;
     }
     .tool_logo{
         height: 5rem;

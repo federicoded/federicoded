@@ -1,7 +1,7 @@
 body{
     font-family: "Montserrat",sans-serif;
     background: linear-gradient(to bottom, 
-        #90d0f7 0%, 
+        #4f8fcf 0%, 
         #F0F2F7 30%
     );
     font-weight: 500;
@@ -14,13 +14,14 @@ body{
 header {
     display:flex;
     position: fixed;
-    height: 4vh;
+    height: fit-content;
     width: 100%;
     top:0;
     left:0;
     z-index: 9999;
-    font-weight: bold;
     justify-content: center;
+    background-color: #4f8fcf;
+
 }
 
 header ul{
@@ -30,19 +31,21 @@ header ul{
     display: flex;
 }
 
-header li{
+.header_link{
     display: block;
-    color: #013a74;
+    color: #F2F2F2 ;
     text-align: center;
     height: fit-content;
     margin-right: 2rem;
     margin-left: 2rem;
     padding: 0.4rem;
     text-decoration-line: underline;
+    transition: color 0.5s ease;
+    font-size: 1.4rem;
 }
 header li:hover{
     background-color: #bdd7f1;
-    color: #032445;
+
 }
 
 a {

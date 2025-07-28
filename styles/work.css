@@ -1,19 +1,14 @@
 body {
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #90d0f7, #bfd1e2,  #ffffff);
-    user-select: none;
-    padding: 3%;
+    background: linear-gradient(to bottom, #71ddf3, #bfd1e2,  #ffffff);
+    padding: 1%;
     padding-left: 10%;
     padding-right: 10%;
 }
 header{
-    background-color: #90d0f7;
+    background-color: #71ddf3;
 }
 .main_header{
     padding:1rem;
-    margin: 1rem;
     color: rgb(0, 8, 51);
 }
 .main_header h1{
@@ -26,14 +21,14 @@ header{
 .project{
     list-style: none;
     border-radius: 20px;
-    height: 22rem;
+    height: 20rem;
     text-align: center;
     align-items: center;
     padding-bottom: 1rem;
 }
 .project:hover{
     transition: background-color 0.5s ease;
-    background-color: #fcf2dfc2;
+    background-color: #d6f2f9c2;
 }
 .project:active{
     transition: background-color 0.0s;
@@ -62,10 +57,10 @@ h2{
     text-align: left;
 }
 .project p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 .items{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     list-style: disc;
 }
 .items li{

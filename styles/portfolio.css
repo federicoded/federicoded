@@ -1,11 +1,4 @@
 body {
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, 
-    #90d0f7 0%, 
-    #F0F2F7 30%);
-    user-select: none;
     padding: 3%;
     padding-left: 10%;
     padding-right: 10%;
@@ -22,7 +15,7 @@ header{
     font-size: 2.5rem;
 }
 p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 .division{
     background-color: #deebf1d3;
@@ -32,15 +25,16 @@ p{
     margin-bottom: 3rem;
     transition: background-color 0.5s ease;
 }
+.tools{
+    text-align: center;
+}
 .tools ul{
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     overflow: auto;
-}
-.tools li{
-    margin-inline:3rem;
+    gap:3rem;
 }
 .tool_logo{
     height: 5rem;
@@ -69,7 +63,7 @@ h3{
     font-size: 1.5rem;
 }
  h4{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
 }
 .challenge ul{

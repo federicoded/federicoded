@@ -5,13 +5,13 @@ function traducir() {
 
   let 
     archivo = path.substring(path.lastIndexOf('/') + 1),
-    ruta = "translation/"
+    ruta = "assets/translation/"
   ;
 
   archivo = archivo.replace('.html', '');
 
   if (path.includes("proyects")) {
-    ruta="../translation/";
+    ruta="../assets/translation/";
   }
 
   const user_lang = navigator.language.slice(0, 2);

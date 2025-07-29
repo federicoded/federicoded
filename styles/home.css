@@ -169,6 +169,9 @@ footer svg{
     .hi{
         left: 82%;
     }
+    footer{
+        overflow: hidden;
+    }
 }
 
 @media (max-aspect-ratio: 8/9) {

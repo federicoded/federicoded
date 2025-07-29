@@ -143,8 +143,8 @@ footer svg{
 
 @media (max-aspect-ratio: 38/29) {
     .welcome{
-        width: 60vw;
-        right: 25%;
+        width: 70vw;
+        right: 15vw;
         top: 15vh;
     }
     main {

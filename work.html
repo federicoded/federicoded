@@ -12,23 +12,23 @@
 <body>
     <header>
         <ul>
-            <li class="header_link"><a href="index.html">Home</a></li>
+            <li class="header_link"><a href="index.html" data-i18n="home">Inicio</a></li>
            <li class="header_link"><a onclick="location.reload()">Portfolio</a></li>
         </ul>
     </header>
     <main>
         <div class="main_header">
-            <h1>
+            <h1 data-i18n="my_work">
                 Mi trabajo:
             </h1>
-            <p>
-                Como diseñador de sistemas busco asegurarme de que cada desisión sea centrada en el usuario, apuntando a desarrollar soluciones útiles y significativas. Me interesa que mi trabajo sea accesible, equitativo y además, me gusta elevar mis creaciones agregándoles una vuelta de tuerca que marque una direfencia.
+            <p data-i18n="as_a_designer">
+                Como diseñador de sistemas busco asegurarme de que cada desisión sea centrada en el usuario, apuntando a desarrollar soluciones útiles y significativas. Me interesa que mi trabajo sea accesible, equitativo y además, me gusta elevar mis creaciones agregándoles una vuelta de tuerca que marque una diferencia.
             </p>
         </div>
         <a href="proyects/portfolio.html">
             <ul class="project">
                 <li class="project_name">
-                    <h1> Portfolio web:<br> <span class="subtitle"> Federico Guigou </span></h1>
+                    <h1> Web Portfolio:<br> <span class="subtitle"> Federico Guigou </span></h1>
                     <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264.436 243.494">
                         <g style="fill:#fff;fill-opacity:1">
                             <path d="M122.334 15.642.504 137.426l121.762 121.381-26.75-88.758L122.464 143 98.529 119.11l-25.21 25.027s-5.021-4.277-4.545-4.763c16.825-17.191 37.015-37.223 53.89-54.32z" style="fill:#0c0c0c;fill-opacity:.697917;stroke:none;stroke-width:3.49974;stroke-dasharray:none;stroke-opacity:1" transform="translate(-.505 -15.313)"/>
@@ -40,12 +40,12 @@
                     </svg>
                 </li>
                 <li class="description">
-                    <p>Diseñado y desarrollado desde cero, este sitio funciona como portafolio y prueba directa de mis habilidades en diseño y desarrollo web.</p>
+                    <p data-i18n="portfolio_description">Diseñado y desarrollado desde cero, este sitio funciona como portafolio y prueba directa de mis habilidades en diseño y desarrollo web.</p>
                     <ul class="items">
                         <li>Logo</li>
-                        <li>Diseño Visual</li>
-                        <li>Diseño de UX</li>
-                        <li>Construcción completa</li>
+                        <li data-i18n="visual_design">Diseño Visual</li>
+                        <li data-i18n="ux_design">Diseño de UX</li>
+                        <li data-i18n="construction">Construcción completa</li>
                     </ul>
                 </li>
             </ul>
@@ -78,5 +78,6 @@
         -->
         
     </main>
+    <script src="js/general.js"></script>
 </body>
 </html>

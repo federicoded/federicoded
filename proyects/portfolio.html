@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> FG - Portfolio Web </title>
+    <title> FG - Portfolio </title>
     <link rel="icon" type="image" href="../assets/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../styles/general.css">
     <link rel="stylesheet" type="text/css" href="../styles/portfolio.css">
@@ -12,16 +12,16 @@
 <body>
     <header>
         <ul>
-            <li class="header_link"><a href="../index.html">Home</a></li>
+            <li class="header_link"><a href="../index.html" data-i18n="home">Inicio</a></li>
            <li class="header_link"><a  href="../work.html">Portfolio</a></li>
         </ul>
     </header>
     <main>
         <div class="main_header">
             <h1>
-                Federico Guigou - Portfolio Web
+                Federico Guigou - Web Portfolio 
             </h1>
-            <p>
+            <p data-i18n="project_description">
                 La creación de este mismo sitio web representó un desafío conceptual y técnico para lograr un equilibrio entre estética, rendimiento y usabilidad. 
                 <br><br>
                 Este proyecto partió de la idea de tener un lugar donde presentar mis habilidades de desarrollo y diseño, a través de una experiencia interactiva, en un medio profesional.
@@ -30,8 +30,8 @@
         
         <div class="division method">
             <div class="contenido_division">
-                <h2>Metolodogía</h2>
-                <p class="texto" > 
+                <h2 data-i18n="method">Metolodogía</h2>
+                <p class="texto" data-i18n="method_text"> 
                     Durante el desarrollo seguí los principios de diseño de <b>Lean UX</b>, priorizando la agilidad en los ciclos de diseño, con un enfoque centrado en el usuario y recibiendo feedback continuo de colegas y profesionales de distintas áreas.
                     <br><br>
                     Aplicar este enfoque, combinando bocetos en papel, prototipos rápidos y ajustes iterativos, me permitió mantener la flexibilidad, mejorar sobre la marcha y construir una interfaz clara, coherente e intuitiva.
@@ -42,8 +42,11 @@
             </div>
         </div>
         <div class="division tools">
-            <h2>Tecnologías y Herramientas</h2>
-            <p class="texto" >Además del viejo y confiable lápiz y papel, me apoyé en las siguientes herramientas para el diseño y la construcción de este sitio:</p>
+            <h2 data-i18n="tech">Tecnologías y Herramientas</h2>
+            <p class="texto" data-i18n="tech_text">
+                Además del viejo y confiable lápiz y papel, me apoyé en las siguientes herramientas para el diseño y la construcción de este sitio:
+
+            </p>
             <br>
             <ul>
                 <li id="html5_logo" title="HTML">
@@ -225,7 +228,7 @@
             </ul>
         </div>
         <div class="division">
-            <h2>Desafíos de Diseño</h2>
+            <h2 data-i18n="challenges">Desafíos de Diseño</h2>
             <div class="challenge">
                 <ul>
                     <li class="illustration">
@@ -242,10 +245,14 @@
                         </svg>
                     </li>
                     <li class="description">
-                        <h3>💠 Diseñar una experiencia visual viva y narrativa</h3>
-                        <p class="texto">Mi objetivo fue acompañar la información que se presenta en el sitio a través de una experiencia que se sintiera como un momento en el camino, como algo que el visitante ve “de paso". Esto debía transmitirse por medio de elementos visuales que sugieran esa idea.</p>
+                        <h3 data-i18n="visual_xp">💠 Diseñar una experiencia visual viva y narrativa</h3>
+                        <p class="texto" data-i18n="visual_xp_text">
+                            Mi objetivo fue acompañar la información que se presenta en el sitio a través de una experiencia que se sintiera como un momento en el camino, como algo que el visitante ve “de paso". Esto debía transmitirse por medio de elementos visuales que sugieran esa idea.
+                        </p>
                         <hr>
-                        <p class="texto"> El sitio parte de una ilustración que simula una publicidad de ruta, acompañado de nubes, aves y otros elementos que refuerzan esta ambientación, creando una escena que remite al tránsito por un paisaje abierto. <br>Las demás secciones mantienen los colores y elementos gráficos que sutilmente dan continuidad a la narrativa.</p>
+                        <p class="texto" data-i18n="visual_xp_solution"> 
+                            El sitio parte de una ilustración que simula una publicidad de ruta, acompañado de nubes, aves y otros elementos que refuerzan esta ambientación, creando una escena que remite al tránsito por un paisaje abierto. <br>Las demás secciones mantienen los colores y elementos gráficos que sutilmente dan continuidad a la narrativa.
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -253,10 +260,14 @@
             <div class="challenge">
                 <ul>
                     <li class="description">
-                        <h3>💠 Lograr un diseño simple y funcional, pero con valor agregado.</h3>
-                        <p class="texto" >Quería evitar sobrecargar el sitio con información o elementos innecesarios, sin caer en una estética vacía. El desafío fue encontrar el equilibrio entre la simplicidad visual y la capacidad de transmitir profesionalismo, calidez y una experiencia agradable para quien lo visita.</p>
+                        <h3 data-i18n="simple_func">💠 Lograr un diseño simple y funcional, pero con valor agregado.</h3>
+                        <p class="texto" data-i18n="simple_func_text">
+                            Quería evitar sobrecargar el sitio con información o elementos innecesarios, sin caer en una estética vacía. El desafío fue encontrar el equilibrio entre la simplicidad visual y la capacidad de transmitir profesionalismo, calidez y una experiencia agradable para quien lo visita.
+                        </p>
                         <hr>
-                        <p class="texto" >Reduje la estructura del sitio a las secciones mínimas necesarias y usé letras grandes y una tipografía legible para destacar lo esencial. Este enfoque me permitió crear una experiencia visual armónica y centrada, sin distracciones, pero con personalidad.</p>
+                        <p class="texto" data-i18n="simple_func_solution">
+                            Reduje la estructura del sitio a las secciones mínimas necesarias y usé letras grandes y una tipografía legible para destacar lo esencial. Este enfoque me permitió crear una experiencia visual armónica y centrada, sin distracciones, pero con personalidad.
+                        </p>
                     </li>
                     <li class="illustration">
                         <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 150 114.744">
@@ -278,10 +289,14 @@
             <div class="challenge">
                 <ul>
                     <li class="description">
-                        <h3>💠 Diseño responsive: adaptar la experiencia a cualquier dispositivo.</h3>
-                        <p class="texto" >El sitio debe adaptarse a diferentes tamaños de pantalla, siendo capaz de transmitir una experiencia igual o similar tanto en una computadora de escritorio como en un smartphone.</p>
+                        <h3 data-i18n="responsive">💠 Diseño responsive: adaptar la experiencia a cualquier dispositivo.</h3>
+                        <p class="texto" data-i18n="responsive_text">
+                            El sitio debe adaptarse a diferentes tamaños de pantalla, siendo capaz de transmitir una experiencia igual o similar tanto en una computadora de escritorio como en un smartphone.
+                        </p>
                         <hr>
-                        <p class="texto" >La disposición de los elementos cambia de acuerdo al espacio disponible. Reduje algunos detalles en la versión mobile sin perder la identidad del diseño, manteniendo una experiencia fluida y coherente en todos los dispositivos.</p>                    
+                        <p class="texto"  data-i18n="responsive_solution">
+                            La disposición de los elementos cambia de acuerdo al espacio disponible. Reduje algunos detalles en la versión mobile sin perder la identidad del diseño, manteniendo una experiencia fluida y coherente en todos los dispositivos.
+                        </p>                    
                     </li>
                     <li class="illustration">
 
@@ -304,17 +319,14 @@
                     </svg>
                 </li>
                 <li>
-                    <p class="conclusion">
+                    <p class="conclusion" data-i18n="conclusion">
                         Este proyecto no solo representa mi portfolio, sino también mi forma de pensar los diseños: simple, funcional y con intención. Cada decisión —visual o técnica— fue parte de un proceso de exploración que me permitió consolidar mi estilo y experimentar con formas sutiles de contar una historia desde la interfaz.
                     </p>
 
                 </li>
             </ul>
         </div>
-           
-        
-        
     </main>
-
+    <script src="../js/general.js"></script>
 </body>
 </html>

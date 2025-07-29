@@ -48,7 +48,7 @@ main {
     fill: #67bfde;
 }
 
-.about_me{
+.links{
     width: 30vw;
     height: 80vh;
     text-align: center;
@@ -150,11 +150,13 @@ footer svg{
     main {
         height: 190vh;
     }
-    .about_me{
+    .links{
+        left: 2vw;
         top: 100vh;
     }
     .presentation{
         top: 90vh;
+        width: 55vw;
     }
     footer svg{
         width: 150%;

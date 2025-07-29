@@ -1,7 +1,5 @@
 
 window.scrollTo(0, 0);
-console.log(window.devicePixelRatio);
-
 
 window.addEventListener('scroll', moverCartelConScroll);
 window.addEventListener("load", actualizarSVG);
@@ -17,13 +15,10 @@ function moverCartelConScroll() {
     alturaMax = 115
   ; 
   const altura_nueva = alturaMin + ((alturaMax - alturaMin) * (desplazamiento / maxDesplazamiento));
-  
-  console.log(desplazamiento);
   cartel.style.height = `${altura_nueva}vh`;
   cartel.style.transform = `translateX(${desplazamiento*2}px)`;
   
   const altura_body = document.body.scrollHeight;
-  console.log(altura_body);
   if(desplazamiento > (altura_body*0.3)){
     cambiar_letras_header(false);
   }else{

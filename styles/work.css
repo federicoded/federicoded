@@ -72,20 +72,25 @@ hr{
 
 @media (max-aspect-ratio: 38/29) {
     body{
-        height: 160vh;
+        height: 155vh;
+        padding-top:4vh;
+        padding-inline: 2vw;
     }
     .project{
         height: fit-content;
+        margin:5%;
         text-align: center;
         align-items: center;
         justify-content: center;
         padding-bottom: 1rem;
         padding: 3vw;
-        padding-top:0;
-        width: 100%;
+        padding-top:1vh;
+        width: 83%;
     }
     .main{
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .project .project_name, .project .description{

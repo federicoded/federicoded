@@ -10,6 +10,7 @@ body {
 }
 .main_header h1{
     font-size: 2.5rem;
+    color: #F2F2F2;
 }
 p{
     font-size: clamp(1.5rem, 1.5vw, 2rem);
@@ -72,10 +73,8 @@ hr{
         justify-content: space-between;
         align-items: center;
     }
-    .texto{
-        font-size: clamp(1.3rem, 1.5vw, 2rem);
+    .contenido_division{
         width: 50%;
-
     }
     .imagen{
         text-align: center;
@@ -139,6 +138,16 @@ hr{
     }
     .tool_logo{
         height: 5rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    h2{
+        font-size: 1.6rem;
+    }
+    .texto{
+        font-size: 1.1rem;
+        margin-bottom: 1.1rem;
     }
 
 }

@@ -30,6 +30,15 @@
     animation: vuelo_pajaritos 30s linear infinite;
 }
 
+@keyframes saltar {
+  0%{ transform: translateY(0); }
+  5% { transform: translateY(60px); }
+  10% { transform: translateY(0); }
+  15% { transform: translateY(60px); }
+  20% { transform: translateY(0); }
+  100% {transform: translateY(0);}
+}
+
 @keyframes apuntar{
     0%{
         transform: translateY(0);
@@ -41,6 +50,9 @@
         transform: translateY(0);
     }
 }
+.hi_arrow{
+  animation: saltar 8s ease-in-out infinite;
+}
 
 .hi:hover .hi_arrow{
     animation: apuntar 1s ease-in-out infinite;
@@ -49,6 +61,9 @@
 .hi_cloud{
     animation: flotar_pequenho 30s ease-in-out infinite;
 }
+
+
+
 @keyframes flotar_pequenho {
   0% {
     transform: translateY(0) rotate(0deg) scale(1);

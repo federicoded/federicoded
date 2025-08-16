@@ -72,7 +72,7 @@ hr{
 
 @media (max-aspect-ratio: 38/29) {
     body{
-        height: 155vh;
+        min-height: 155vh;
         padding-top:4vh;
         padding-inline: 2vw;
     }

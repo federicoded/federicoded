@@ -10,7 +10,7 @@ Soy Analista y Diseñador de Software certificado en **UX**, con experiencia en 
 - Metodologías ágiles (Scrum)
 
 ## 🌐 En línea
-Puedes acceder a mi sitio en [https://fede-guigou.github.io/federicoded](https://fede-guigou.github.io/federicoded)
+Puedes acceder a mi sitio en [www.federicoguigou.pro](https://federicoguigou.pro)
 
 ---
 

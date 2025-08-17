@@ -1,6 +1,6 @@
 # 🪐 ¡Hola! Soy Fede 🪐
 ## Bienvenido a mi repositorio personal. 
-Soy Analista y Diseñador de Software, con experiencia en desarrollo **frontend** y **backend**. Me motiva desarrollar soluciones que aporten valor real y eleven la experiencia del usuario.
+Soy Analista y Diseñador de Software certificado en **UX**, con experiencia en desarrollo **frontend** y **backend**. Me motiva desarrollar soluciones que aporten valor real y eleven la experiencia del usuario.
 
 ## 🛠️ Tecnologías destacadas
 - HTML, CSS, JavaScript

@@ -2,12 +2,12 @@
 ## Bienvenido a mi repositorio personal. 
 Soy Analista y Diseñador de Software certificado en **UX**, con experiencia en desarrollo **frontend** y **backend**. Me motiva desarrollar soluciones que aporten valor real y eleven la experiencia del usuario.
 
-## 🛠️ Tecnologías destacadas
+## 🛠️ Conocimientos 
 - HTML, CSS, JavaScript
 - PHP, SQL
 - Git & GitHub
 - Diseño responsivo
-- Metodologías ágiles (Scrum)
+- Metodologías ágiles
 
 ## 🌐 En línea
 Puedes acceder a mi sitio en [www.federicoguigou.pro](https://federicoguigou.pro)

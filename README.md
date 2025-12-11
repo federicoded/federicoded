@@ -3,10 +3,12 @@
 Soy Analista y Diseñador de Software con experiencia en desarrollo **frontend** y **backend**. Me motiva desarrollar soluciones que aporten valor real y eleven la experiencia del usuario.
 
 ## 🛠️ Conocimientos 
-- HTML, CSS, JavaScript
-- PHP, SQL
-- Git & GitHub
-- Diseño responsivo
+- Desarrollo Front-End y Back-End.
+  - HTML · JavaScript · TypeScript · CSS · PHP · Laravel · Angular · Ionic
+- Investigación de UX y análisis funcional.
+  - Prototipado de baja y alta fidelidad (Figma) - Diseño de UI/UX
+- SQL / BBDD relacionales.
+- Control de versiones - Git
 - Metodologías ágiles
 
 ## 🌐 En línea

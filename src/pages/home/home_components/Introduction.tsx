@@ -1,3 +1,4 @@
+import * as  motion from "motion/react-client"
 
 const Introduction = () => {
     return (
@@ -11,8 +12,36 @@ const Introduction = () => {
                     <span className="subtext">Este sitio es mi carta de presentación y laboratorio, donde pruebo herramientas y recursos nuevos.</span>
                 </p>
                 <ul>
-                    <li><a className="enlace" data-i18n="my_work">Mira mi trabajo</a></li>
-                    <li><a target="_blank" data-i18n="my_resume">Accede a mi CV</a></li>
+                    <motion.li
+                        initial={{
+                            scale: 1,
+                            fontWeight: "550",
+                        }}
+                        whileHover={{
+                            scale: 1.15,
+                            fontWeight: "600",
+                            backgroundColor: "#b9abbfb6"
+                        }}
+                        whileTap={{
+                            scale: 0.9
+                        }}
+                    ><a className="enlace" data-i18n="my_work">Mira mi trabajo</a></motion.li>
+                    <motion.li
+                        initial={{
+                            scale: 1,
+                            fontWeight: "550",
+                        }}
+                        whileHover={{
+                            scale: 1.15,
+                            fontWeight: "600",
+                            backgroundColor: "#b9abbfb6"
+                        }}
+                        whileTap={{
+                            scale: 0.9
+                        }}
+                    >
+                        <a target="_blank" data-i18n="my_resume">Accede a mi CV</a>
+                    </motion.li>
                 </ul>
             </div>
         </>

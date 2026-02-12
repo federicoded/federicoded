@@ -6,23 +6,22 @@
     .advertising {
         position: fixed;
         bottom: 0;
-        height: 85vh;
-        max-width: 70vw;
+        width: 60%;
         z-index: 980;
     }
 
     .welcome {
-        width: 30vw;
+        width: 25%;
         text-align: center;
         align-items: center;
         display: flex;
         flex-direction: column;
         position: absolute;
-        right: 7vw;
-        top: 15vh;
+        right: 11%;
+        top: 8%;
 
-        .go_down {
-            margin-top: 6rem;
+        .go_down_button {
+            margin-top: 7rem;
             animation: go_down_cloud_movement 150s linear infinite;
             animation-direction: alternate;
 
@@ -36,17 +35,17 @@
 
         }
 
-        .go_down:hover {
+        .go_down_button:hover {
             .go_down_arrow {
                 animation: go_down_arrow_movement_hover 0.7s linear infinite;
             }
         }
 
-        .go_down:active .cloud_go_down_cloud {
+        .go_down_button:active .cloud_go_down_cloud {
             fill: #91c7dd;
         }
 
-        .go_down:active .shadow_go_down_cloud {
+        .go_down_button:active .shadow_go_down_cloud {
             fill: white;
         }
 
@@ -115,7 +114,6 @@
             list-style: none;
             display: flex;
             flex-direction: row;
-            justify-content: center !important;
             align-items: center;
             padding: 0;
             gap: 1rem;
@@ -148,7 +146,7 @@
                 border-radius: 50%;
                 position: absolute;
                 inset: 0;
-                background: #b9abbf;
+                background: #b9abbfb6;
                 z-index: -1;
                 transform-origin: center;
                 pointer-events: none;
@@ -162,6 +160,8 @@
         .profile_pic {
             margin-top: 20%;
             margin-bottom: 10%;
+            border-radius: 50%;
+            box-shadow: 0.0 0.0 1rem 0.01rem #4040408a;
         }
 
     }
@@ -194,6 +194,7 @@
             border-radius: 15px;
             padding: 0.7rem;
             text-decoration-line: underline;
+            font-style: italic;
         }
 
         li:active {
@@ -217,8 +218,127 @@
         }
     }
 
+}
 
 
+@media (max-aspect-ratio: 38/29) {
+    .home_page {
+
+        .advertising {
+            width: 75%;
+        }
+
+        .welcome {
+            width: 60%;
+            left: 20%;
+            top: 15vh;
+
+            .go_down_button {
+                position: absolute;
+                top: 100%;
+                right: -5%;
+            }
+
+        }
+
+        .about_me {
+            width: 40%;
+            height: fit-content;
+            left: 30%;
+            padding: 0;
+            top: 78%;
+
+            .profile_pic {
+                margin-top: 5%;
+            }
+        }
+
+        .introduction {
+            width: 80%;
+            height: auto;
+            right: 10%;
+            top: 160vh;
+
+            p {
+                margin-top: 0.5rem;
+            }
+
+        }
+
+        .street_footer {
+            width: 105%;
+            bottom: 1;
+            left: -1;
+        }
+    }
+}
+
+@media (max-aspect-ratio: 67/89) {
+    .home_page {
+        max-height: 220vh;
+
+        .advertising {
+            width: 90%;
+        }
+
+        .welcome {
+            width: 70%;
+            left: 15%;
+
+            .go_down_button {
+                position: relative;
+                margin-top: 9rem;
+            }
+
+            .go_down_button:active {
+                .go_down_arrow {
+                    animation: go_down_arrow_movement_hover 0.7s linear infinite;
+                }
+            }
+        }
+
+        .about_me {
+            top: 80%;
+
+            .profile_pic {
+                margin-top: 5%;
+            }
+        }
+
+
+        .introduction {
+            width: 90%;
+            right: 5%;
+            top: 135vh;
+        }
+
+    }
+
+}
+
+@media (max-aspect-ratio: 1/2) {
+    .home_page {
+
+        .advertising {
+            width: 90%;
+        }
+
+        .welcome {
+            width: 75%;
+            left: 12%;
+        }
+
+        .about_me {
+            top: 84%;
+        }
+
+        .introduction {
+            width: 90%;
+            right: 5%;
+            top: 132vh;
+        }
+
+    }
 }
 
 @keyframes welcome_movement {
@@ -354,7 +474,7 @@
     }
 
     50% {
-        transform: translateY(10%);
+        transform: translateY(13%);
     }
 
     100% {

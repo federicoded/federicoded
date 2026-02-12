@@ -1,12 +1,34 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
+import { motion, useScroll, useTransform } from "motion/react";
 
-const Header = () => {
+type HeaderProps = {
+    color_top: string,
+    color_bottom: string
+}
+
+const Header = (hp: HeaderProps) => {
+    const { scrollYProgress } = useScroll();
+    const color = useTransform(
+        scrollYProgress,
+        [0, 1],
+        [hp.color_top, hp.color_bottom]
+    );
+
     return (
         <>
             <header className="header">
                 <ul>
-                    <li className="header_link"><a data-i18n="home">Inicio</a></li>
-                    <li className="header_link"><a>Portfolio</a></li>
+                    <Link className="header_link" data-i18n="home" to="http://federicoguigou.pro">
+                        <motion.li
+                            style={{ color }}
+                        >Inicio</motion.li>
+                    </Link>
+                    <Link className="header_link" to="http://federicoguigou.pro/portfolio">
+                        <motion.li
+                            style={{ color }}
+                        >Portfolio</motion.li>
+                    </Link>
                 </ul>
             </header>
         </>

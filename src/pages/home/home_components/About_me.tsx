@@ -1,6 +1,7 @@
 import { forwardRef } from "react";
 import * as  motion from "motion/react-client"
 
+
 type link_data = {
     link: string;
     svg_path: string;
@@ -33,13 +34,13 @@ const About_me = forwardRef<HTMLDivElement>((_, about_me_ref) => {
 
     const AML_Variants = {
         initial: { scale: 1 },
-        hover: { scale: 1.4 },
+        hover: { scale: 1.5 },
     };
 
     const background_Variants = {
         initial: { scale: 0 },
         hover: { scale: 5 },
-        
+
     };
 
     return (
@@ -50,6 +51,7 @@ const About_me = forwardRef<HTMLDivElement>((_, about_me_ref) => {
                     {
                         social_links_data.map((ld, index) => (
                             <motion.a href={ld.link} target="_blank"
+                                key={index}
                                 className="about_me_link"
                                 variants={AML_Variants}
                                 initial="initial" //nombre de la variant
@@ -67,7 +69,7 @@ const About_me = forwardRef<HTMLDivElement>((_, about_me_ref) => {
                                         className="logo"
                                         xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve"
                                         viewBox={ld.view_box} >
-                                        <path d={ld.svg_path} fill-rule="evenodd" />
+                                        <path d={ld.svg_path} fillRule="evenodd" />
                                     </svg>
                                 </li>
                             </motion.a>

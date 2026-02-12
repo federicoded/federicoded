@@ -11,7 +11,7 @@ import Footer from "./home_components/Footer";
 
 const Home = () => {
     const about_me_ref = useRef<HTMLHeadingElement | null>(null); //a que tipo de elemento apunta la ref entre < >. También puede ser useRef(null)
-    const scrollToAboutMe= () => {
+    const scrollToAboutMe = () => {
         about_me_ref.current?.scrollIntoView({
             behavior: "smooth",
             block: "start",
@@ -20,11 +20,15 @@ const Home = () => {
 
     return (
         <>
+            <Header
+                color_top="#FFFFFF"
+                color_bottom="#0a1116"
+            />
             <div className="page home_page">
-                <Header />
+
                 <main>
                     <Advertising />
-                    <Welcome onClick_Scroll={scrollToAboutMe}/>
+                    <Welcome onClick_Scroll={scrollToAboutMe} />
                     <About_me ref={about_me_ref} />
                     <Introduction />
                 </main>

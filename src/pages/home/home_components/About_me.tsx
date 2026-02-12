@@ -46,7 +46,7 @@ const About_me = forwardRef<HTMLDivElement>((_, about_me_ref) => {
     return (
         <>
             <div className="about_me" ref={about_me_ref}>
-                <img className="profile_pic" alt="Foto de Federico Guigou" src="./Home/profile_pic.png" width="50%"></img>
+                <img className="profile_pic" alt="Foto de Federico Guigou" src="./Home/profile_pic.png"></img>
                 <ul className="links">
                     {
                         social_links_data.map((ld, index) => (

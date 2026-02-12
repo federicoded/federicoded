@@ -24,7 +24,7 @@ const Header = (hp: HeaderProps) => {
                             style={{ color }}
                         >Inicio</motion.li>
                     </Link>
-                    <Link className="header_link" to="http://federicoguigou.pro/portfolio">
+                    <Link className="header_link" to="http://federicoguigou.pro/#/portfolio">
                         <motion.li
                             style={{ color }}
                         >Portfolio</motion.li>

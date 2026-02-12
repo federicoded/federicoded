@@ -179,7 +179,6 @@ const Federicoded = () => {
                                 <p className="main_intro">
                                     La creación de este mismo sitio web representó un desafío conceptual y técnico para lograr un equilibrio entre estética, rendimiento y usabilidad.
                                     Este proyecto partió de la necesidad de tener un lugar donde presentar mis habilidades de desarrollo y diseño, a través de una experiencia interactiva, en un medio profesional.
-
                                 </p>
                             </>
                         }
@@ -190,7 +189,7 @@ const Federicoded = () => {
                         bigger_side="right"
                         left={
                             <>
-                                <h2 data-i18n="method">Metolodogía</h2>
+                                <h2 data-i18n="method" className="method_title">Metolodogía</h2>
                                 <p className="method_text" data-i18n="method_text">
                                     Este sitio lo construí basándome en los principios de <b>Lean UX</b>, priorizando la agilidad en los ciclos de diseño y centrándome en el usuario final, recibiendo recomendacines de colegas, profesores y otros profesionales.
                                 </p>
@@ -257,7 +256,7 @@ const Federicoded = () => {
                         <Common_Section
                             left={
                                 <>
-                                    <h3>Diseñar una experiencia visual narrativa </h3>
+                                    <h3 className="challenge_title">Diseñar una experiencia visual narrativa </h3>
                                     <p className="challenge_text" data-i18n="visual_xp_text">
                                         Mi objetivo fue presentar la información en el sitio a través de una experiencia que se sintiera como un momento en el camino, como algo que el visitante ve “de paso".
                                     </p>
@@ -289,7 +288,7 @@ const Federicoded = () => {
                             }
                             right={
                                 <>
-                                    <h3>Crear un diseño simple y funcional, pero con valor agregado</h3>
+                                    <h3 className="challenge_title">Crear un diseño simple y funcional, pero con valor agregado</h3>
                                     <p className="challenge_text" data-i18n="visual_xp_text">
                                         Quería evitar sobrecargar el sitio, sin caer en una estética vacía. El desafío fue encontrar el equilibrio entre la simplicidad visual y la capacidad de transmitir profesionalismo, calidez y una experiencia agradable para quien lo visita.
                                     </p>
@@ -304,7 +303,7 @@ const Federicoded = () => {
                         <Common_Section
                             left={
                                 <>
-                                    <h3>Diseño responsive</h3>
+                                    <h3 className="challenge_title">Diseño responsive</h3>
                                     <p className="challenge_text" data-i18n="visual_xp_text">
                                         El sitio debía adaptarse a diferentes tamaños de pantalla, siendo capaz de transmitir una experiencia igual o similar tanto en una computadora de escritorio como en un smartphone.
                                     </p>

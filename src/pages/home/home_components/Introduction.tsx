@@ -1,4 +1,5 @@
 import * as  motion from "motion/react-client"
+import { Link } from "react-router-dom";
 
 const Introduction = () => {
     return (
@@ -25,7 +26,11 @@ const Introduction = () => {
                         whileTap={{
                             scale: 0.9
                         }}
-                    ><a className="enlace" data-i18n="my_work">Mira mi trabajo</a></motion.li>
+                    >
+                        <Link className="intro_link" data-i18n="my_work" to="http://federicoguigou.pro/#/portfolio">
+                            Mira mis proyectos
+                        </Link>
+                    </motion.li>
                     <motion.li
                         initial={{
                             scale: 1,
@@ -40,7 +45,8 @@ const Introduction = () => {
                             scale: 0.9
                         }}
                     >
-                        <a target="_blank" data-i18n="my_resume">Accede a mi CV</a>
+                        <a className="intro_link" target="_blank" data-i18n="my_resume" href="/resume.pdf">Accede a mi CV</a>
+
                     </motion.li>
                 </ul>
             </div>

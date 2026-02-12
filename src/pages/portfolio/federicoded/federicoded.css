@@ -117,16 +117,17 @@
 
 @media (max-aspect-ratio: 38/29) {
     .federicoded_page {
-        padding: 6rem 1rem 0 1rem;
+        padding: 8rem 1rem 0 1rem;
 
         .separation {
             height: 2rem;
         }
 
         .main_title {
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
         }
-        .main_intro{
+
+        .main_intro {
             margin-bottom: 3rem;
         }
 
@@ -138,13 +139,26 @@
         }
 
         .method_box {
-            margin-inline: 2rem;
+            margin-inline: 0.5rem;
+
+            .method_text {
+                font-size: 0.9rem;
+            }
         }
 
         .desing_challenges {
-            margin: 2rem;
-            .desing_challenges_title{
+            margin: 0.5rem;
+
+            .desing_challenges_title {
                 margin-bottom: 2rem;
+            }
+
+            .challenge_title {
+                font-size: 1.5rem;
+            }
+
+            .challenge_text {
+                font-size: 1rem;
             }
         }
 
@@ -165,33 +179,108 @@
 
 @media (max-aspect-ratio: 67/89) {
     .federicoded_page {
-        padding-top: 8rem;
+        box-sizing: border-box;
+        padding: 8rem 1rem 0 1rem;
+
+        .main_title {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+
+        .main_intro {
+            font-size: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .method_title {
+            font-size: 1.7rem;
+            line-height: 1.7rem;
+        }
+
+        .desing_challenges_title {
+            margin-bottom: 2rem;
+
+            h2 {
+                font-size: 1.7rem;
+                line-height: 1.7rem;
+            }
+        }
+
+        .desing_challenges {
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 1rem;
+
+            .desing_challenges_title {
+                margin-bottom: 2rem;
+            }
+
+            .challenge_title {
+                font-size: 1.4rem;
+            }
+
+            .challenge_text {
+                font-size: 0.9rem;
+            }
+
+        }
+
+        .common_section {
+            border-radius: 1rem;
+
+            .illustration_side {
+                border-radius: 0.5rem;
+            }
+        }
     }
 }
 
 @media (max-aspect-ratio: 1/2) {
     .federicoded_page {
-        padding-top: 13rem;
+        padding-top: 9rem;
 
         .main_title {
-            margin-bottom: 1rem;
+            font-size: 1.8rem;
         }
 
-        .main_intro{
-            margin-bottom: 8rem;
+        .main_intro {
+            margin-bottom: 5rem;
+            font-size: 0.8rem;
         }
+
         .method_box {
-            margin-inline: 0.3rem;
-        }
-        .desing_challenges {
-            margin: 0.3rem;
-            padding:0.2rem;
-            margin-bottom: 2rem;
-            .desing_challenges_title{
-                margin-bottom: 2rem;
+            margin-inline: 0;
+
+            .method_title {
+                margin-bottom: 0;
             }
-            .challenge_text{
-                font-size: 1rem;
+
+            .method_text {
+                font-size: 0.8rem;
+            }
+        }
+
+        .desing_challenges {
+            margin: 0;
+            padding: 0.2rem;
+            padding-top: 0.7rem;
+            margin-bottom: 2rem;
+
+            .desing_challenges_title {
+                margin-bottom: 1.5rem;
+
+                h2 {
+                    font-size: 1.4rem;
+                }
+            }
+            .challenge_title{
+                font-size: 1.3rem;
+                line-height: 1.4rem;
+            }
+
+            .challenge_text {
+                font-size: 0.85rem;
             }
 
         }

@@ -20,35 +20,6 @@
         right: 11%;
         top: 8%;
 
-        .go_down_button {
-            margin-top: 7rem;
-            animation: go_down_cloud_movement 150s linear infinite;
-            animation-direction: alternate;
-
-            .go_down_cloud {
-                overflow: visible;
-            }
-
-            .go_down_arrow {
-                animation: go_down_arrow_movement 8s linear infinite;
-            }
-
-        }
-
-        .go_down_button:hover {
-            .go_down_arrow {
-                animation: go_down_arrow_movement_hover 0.7s linear infinite;
-            }
-        }
-
-        .go_down_button:active .cloud_go_down_cloud {
-            fill: #91c7dd;
-        }
-
-        .go_down_button:active .shadow_go_down_cloud {
-            fill: white;
-        }
-
         .welcome_cloud {
             animation: welcome_movement 250s linear infinite;
             animation-direction: alternate;
@@ -95,6 +66,37 @@
             }
         }
 
+    }
+
+    .go_down_button {
+        position: absolute;
+        top: 45vh;
+        right: 15%;
+        animation: go_down_cloud_movement 90s linear infinite;
+        animation-direction: alternate;
+
+        .go_down_cloud {
+            overflow: visible;
+        }
+
+        .go_down_arrow {
+            animation: go_down_arrow_movement 8s linear infinite;
+        }
+
+    }
+
+    .go_down_button:hover {
+        .go_down_arrow {
+            animation: go_down_arrow_movement_hover 0.7s linear infinite;
+        }
+    }
+
+    .go_down_button:active .cloud_go_down_cloud {
+        fill: #91c7dd;
+    }
+
+    .go_down_button:active .shadow_go_down_cloud {
+        fill: white;
     }
 
     .about_me {
@@ -158,6 +160,7 @@
         }
 
         .profile_pic {
+            width: 50%;
             margin-top: 20%;
             margin-bottom: 10%;
             border-radius: 50%;
@@ -220,36 +223,76 @@
 
 }
 
-
 @media (max-aspect-ratio: 38/29) {
     .home_page {
 
         .advertising {
-            width: 75%;
+            width: 70%;
         }
 
         .welcome {
             width: 60%;
             left: 20%;
             top: 15vh;
+        }
 
-            .go_down_button {
-                position: absolute;
-                top: 100%;
-                right: -5%;
-            }
-
+        .go_down_button {
+            right: 5%;
         }
 
         .about_me {
-            width: 40%;
-            height: fit-content;
-            left: 30%;
-            padding: 0;
-            top: 78%;
+            top: 150vh;
 
             .profile_pic {
-                margin-top: 5%;
+                width: 65%;
+            }
+        }
+
+        .introduction {
+            height: auto;
+            right: 10%;
+            top: 165vh;
+
+        }
+
+        .street_footer {
+            width: 105%;
+            bottom: 1;
+            left: -1;
+        }
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .home_page {
+
+        .advertising {
+            width: 80%;
+        }
+
+        .welcome {
+            width: 60%;
+            left: 20%;
+            top: 15vh;
+        }
+
+        .go_down_button {
+            top: 35vh;
+            right: 40%;
+        }
+
+        .about_me {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: row-reverse;
+            gap:2rem;
+            left: 0;
+            top: 86%;
+
+            .profile_pic {
+                margin:0;
+                width: 25%;
             }
         }
 
@@ -257,7 +300,6 @@
             width: 80%;
             height: auto;
             right: 10%;
-            top: 160vh;
 
             p {
                 margin-top: 0.5rem;
@@ -273,6 +315,7 @@
     }
 }
 
+
 @media (max-aspect-ratio: 67/89) {
     .home_page {
         max-height: 220vh;
@@ -284,25 +327,19 @@
         .welcome {
             width: 70%;
             left: 15%;
-
-            .go_down_button {
-                position: relative;
-                margin-top: 9rem;
-            }
-
-            .go_down_button:active {
-                .go_down_arrow {
-                    animation: go_down_arrow_movement_hover 0.7s linear infinite;
-                }
+        }
+        .go_down_button{
+            top:40vh;
+            right: 35%;
+        }
+        .go_down_button:active {
+            .go_down_arrow {
+                animation: go_down_arrow_movement_hover 0.7s linear infinite;
             }
         }
 
         .about_me {
-            top: 80%;
-
-            .profile_pic {
-                margin-top: 5%;
-            }
+            top: 84%;
         }
 
 
@@ -310,6 +347,11 @@
             width: 90%;
             right: 5%;
             top: 135vh;
+            p{
+                font-size: 0.9rem;
+                margin: 0;
+                margin-bottom: 0.5rem;
+            }
         }
 
     }
@@ -318,7 +360,6 @@
 
 @media (max-aspect-ratio: 1/2) {
     .home_page {
-
         .advertising {
             width: 90%;
         }
@@ -328,19 +369,45 @@
             left: 12%;
         }
 
+        .go_down_button{
+            right: 30%;
+        }
         .about_me {
             top: 84%;
+            flex-direction: row;
+            .links{
+                flex-direction: column;
+                gap:0;
+            }
+            .profile_pic{
+                width: 40%;
+            }
         }
 
         .introduction {
             width: 90%;
             right: 5%;
             top: 132vh;
+            h1{
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+            ul{
+                margin:0;
+            }
         }
 
     }
 }
 
+
+
+
+
+
+
+/* -------------------- ANIMATIONS --------------------*/
 @keyframes welcome_movement {
     0% {
         transform: translateX(3rem) translateY(0) rotate(10deg) scale(1.2);
@@ -423,23 +490,23 @@
 
 @keyframes go_down_cloud_movement {
     0% {
-        transform: translateX(1rem) rotate(0deg) scale(1);
+        transform: translateX(0) rotate(0deg) scale(1);
     }
 
     25% {
-        transform: translateX(0) rotate(3deg) scale(1.2);
+        transform: translateX(-2rem) rotate(-3deg) scale(1.3);
     }
 
     50% {
-        transform: translateX(-1rem) rotate(0deg) scale(1);
+        transform: translateX(2rem) rotate(-1deg) scale(1.5);
     }
 
     75% {
-        transform: translateX(-1.5rem) rotate(-3deg) scale(1.3);
+        transform: translateX(-2rem) rotate(3deg) scale(0.9);
     }
 
     100% {
-        transform: translateX(0.5) rotate(0deg) scale(1);
+        transform: translateX(0) rotate(0deg) scale(1);
     }
 }
 

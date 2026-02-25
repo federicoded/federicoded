@@ -6,9 +6,13 @@
 
     .introduction {
         text-align: left;
-
+        color: #213547;
+        h1{
+            color: #213547;
+        }
         p {
             font-size: 1.15rem;
+            color: #213547;
         }
     }
 

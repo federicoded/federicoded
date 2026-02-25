@@ -25,7 +25,7 @@ const Portfolio = () => {
                     <Introduction />
                     <ul className="project_list">
                         <Project
-                            destination={"http://federicoguigou.pro/portfolio/federicoded"}
+                            destination={"/portfolio/federicoded"}
                             title="Portfolio web - Federico Guigou"
                             illustration={
                                 <>
@@ -61,7 +61,7 @@ const Portfolio = () => {
 
  {/*
                         <Project
-                            destination={"http://localhost:5173/"}
+                            destination={""}
                             title="KDT - Mobile Delivery App"
                             illustration={
                                 <>
@@ -98,7 +98,7 @@ const Portfolio = () => {
                                 "Build"
                             ]} />
                         <Project
-                            destination={"http://localhost:5173/"}
+                            destination={""}
                             title="Portfolio web - AFL Grafoanálisis"
                             illustration={
                                 <>

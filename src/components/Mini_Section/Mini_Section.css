@@ -1,0 +1,15 @@
+.mini_section {
+    position: relative;
+    height: 20rem;
+    color: #01295f;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    h1, h2, h3, h4, h5, h6, p{
+        text-align: center;
+    }
+}

@@ -1,0 +1,210 @@
+.portfolio_page {
+    background: linear-gradient(to bottom, #4f8fcfc6, #90c5f7c6, #feedc1c6);
+    padding: 4rem 10rem 0 10rem;
+    overflow: hidden;
+    height: 100%;
+
+    .introduction {
+        text-align: left;
+        color: #213547;
+        h1{
+            color: #213547;
+        }
+        p {
+            font-size: 1.15rem;
+            color: #213547;
+        }
+    }
+
+    .projects_container {
+        background-color: white;
+        padding: 2rem 8rem 0 8rem;
+        box-shadow: -0.1 -0.1 0.9rem 0.01rem #4040408a;
+        border-radius: 5rem 5rem 0 0;
+        height: 91vh;
+        margin: 0;
+        position: relative;
+        width: 100%;
+        translate: 0 0.5rem;
+
+        .project_link {
+            text-decoration: none;
+        }
+
+        .project_list {
+            list-style: none;
+            padding: 3rem;
+            gap: 4rem;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 60vh;
+            overflow: auto;
+
+
+            .project {
+                padding: 0;
+                overflow: visible;
+
+                .project_base {
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    overflow: visible;
+                    padding: 0;
+                    margin: 0;
+
+                    .project_description {
+                        width: 45%;
+                        color: #213547;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        h2 {
+                            margin: 0;
+                        }
+
+                        li {
+                            text-align: left;
+                        }
+                    }
+
+                    .project_illustration {
+                        box-sizing: border-box;
+                        justify-content: center;
+                        overflow: hidden;
+                        border-radius: 2rem;
+                        padding: 0;
+                        height: auto;
+                        width: 60%;
+
+                        .illustration {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (max-aspect-ratio: 38/29) {
+    .portfolio_page {
+        padding: 4rem 4rem 0 4rem;
+        overflow: hidden;
+
+        .introduction {
+            h1 {
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+
+        .projects_container {
+            padding: 2rem 2rem 0 2rem;
+            border-radius: 2rem 2rem 0 0;
+
+            .project_list {
+                list-style: none;
+                height: 49vh;
+                padding: 0;
+                margin: 0;
+
+                .project {
+
+                    .project_base {
+                        align-items: center;
+                        gap: 1rem;
+                        flex-direction: column;
+                        padding-top: 1rem;
+
+                        .project_description {
+                            width: 100%;
+                            color: #213547;
+                            padding: 0;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            .project_title {
+                                font-size: 1.2rem;
+                            }
+
+                            .description_items {
+                                font-size: 0.9rem;
+                            }
+
+                        }
+
+                        .project_illustration {
+                            width: 100%;
+                            box-sizing: border-box;
+                            justify-content: center;
+                            box-shadow: rgba(41, 41, 45, 0.2) 0px 0.5rem 1rem 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}
+
+@media (max-aspect-ratio: 67/89) {
+    .portfolio_page {
+        padding: 4rem 0.5rem 0 0.5rem;
+
+        .introduction {
+
+            h1 {
+                font-size: 1.7rem;
+                line-height: 1.8rem;
+            }
+
+            p {
+                font-size: 0.7rem;
+                margin-top:1rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .projects_container {
+            height: 92vh;
+            padding: 1.5rem;
+
+            .project_list {
+                gap: 2rem;
+                height: 60vh;
+                padding:0;
+            }
+        }
+    }
+}
+
+@media (max-aspect-ratio: 1/2) {
+    .portfolio_page {
+
+        .projects_container {
+            height: 92vh;
+
+            .project_list {
+                gap: 2rem;
+                height: 60vh;
+                padding-bottom: 4rem;
+            }
+        }
+    }
+}

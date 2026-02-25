@@ -1,0 +1,572 @@
+.home_page {
+    background: linear-gradient(to bottom, #4f8fcf, #90c5f7, #feedc1, #e4a872);
+    height: 250vh;
+    overflow: hidden;
+
+    .advertising {
+        position: fixed;
+        bottom: 0;
+        width: 60%;
+        z-index: 980;
+        overflow: visible;
+        display: block;
+    }
+
+    .welcome {
+        width: 25%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 11%;
+        top: 8%;
+
+        .welcome_cloud {
+            animation: welcome_movement 250s linear infinite;
+            animation-direction: alternate;
+            overflow: visible;
+
+            .bienvenido_B {
+                animation: letter_3 120s linear infinite;
+                animation-direction: alternate;
+            }
+
+            .bienvenido_i1 {
+                animation: letter_1 90s linear infinite;
+                animation-direction: alternate;
+            }
+
+            .bienvenido_e1 {
+                animation: letter_1 120s linear infinite;
+                animation-direction: alternate;
+            }
+
+            .bienvenido_n1 {
+                animation: letter_2 90s linear infinite;
+                animation-direction: alternate;
+            }
+
+            .bienvenido_e2 {
+                animation: letter_2 120s linear infinite;
+                animation-direction: alternate;
+            }
+
+            .bienvenido_n2 {
+                animation: letter_1 90s linear infinite;
+                animation-direction: alternate;
+            }
+
+            .bienvenido_d {
+                animation: letter_3 150s linear infinite;
+                animation-direction: alternate;
+            }
+
+            .bienvenido_o {
+                animation: letter_1 90s linear infinite;
+                animation-direction: alternate;
+            }
+        }
+
+    }
+
+    .go_down_button {
+        position: absolute;
+        top: 45vh;
+        right: 15%;
+        animation: go_down_cloud_movement 90s linear infinite;
+        animation-direction: alternate;
+
+        .go_down_cloud {
+            overflow: visible;
+        }
+
+        .go_down_arrow {
+            animation: go_down_arrow_movement 8s linear infinite;
+        }
+
+    }
+
+    .go_down_button:hover {
+        .go_down_arrow {
+            animation: go_down_arrow_movement_hover 0.7s linear infinite;
+        }
+    }
+
+    .go_down_button:active .cloud_go_down_cloud {
+        fill: #91c7dd;
+    }
+
+    .go_down_button:active .shadow_go_down_cloud {
+        fill: white;
+    }
+
+    .about_me {
+
+        width: 30vw;
+        height: 80vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 6vw;
+        top: 140vh;
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+            gap: 1rem;
+
+            li {
+                text-align: center;
+                width: fit-content;
+                height: fit-content;
+                border-radius: 40%;
+                background-color: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.5rem;
+
+                a {
+                    padding: 0;
+                    margin: 0;
+                }
+
+            }
+
+            .about_me_link {
+                border-radius: 45%;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .backg_div {
+                border-radius: 50%;
+                position: absolute;
+                inset: 0;
+                background: #b9abbfb6;
+                z-index: -1;
+                transform-origin: center;
+                pointer-events: none;
+            }
+
+            .logo {
+                height: 5vh;
+            }
+        }
+
+        .profile_pic {
+            width: 50%;
+            margin-top: 20%;
+            margin-bottom: 10%;
+            border-radius: 50%;
+            box-shadow: 0.0 0.0 1rem 0.01rem #4040408a;
+        }
+
+    }
+
+    .introduction {
+        width: 50vw;
+        height: 100vh;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        color: #213547;
+        right: 10vw;
+        top: 140vh;
+        align-items: baseline;
+        font-weight: 400;
+        font-size: clamp(1rem, 1.5vw, 3rem);
+
+        h1 {
+            font-size: clamp(2rem, 2.5vw, 5rem);
+        }
+
+        p {
+            text-align: left;
+            margin: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        li {
+            margin: 0;
+            border-radius: 15px;
+            padding: 0.7rem;
+            font-style: italic;
+            text-align: left;
+
+            .intro_link {
+                color: #213547;
+                text-decoration: none;
+            }
+        }
+
+        li:active {
+            background-color: #ffffff;
+        }
+    }
+
+    .street_footer {
+        padding: 0;
+        margin: 0;
+        height: fit-content;
+        width: 101%;
+        position: absolute;
+        bottom: 0;
+
+        svg {
+            position: relative;
+            bottom: -0.5rem;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+}
+
+@media (max-aspect-ratio: 38/29) {
+    .home_page {
+        .advertising {
+            width: 70%;
+        }
+
+        .welcome {
+            width: 60%;
+            left: 20%;
+            top: 15vh;
+        }
+
+        .go_down_button {
+            right: 5%;
+        }
+
+        .about_me {
+            top: 150vh;
+
+            .profile_pic {
+                width: 65%;
+            }
+        }
+
+        .introduction {
+            height: auto;
+            right: 10%;
+            top: 165vh;
+
+        }
+
+        .street_footer {
+            width: 105%;
+            bottom: 1;
+            left: -1;
+        }
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .home_page {
+        .advertising {
+            width: 80%;
+        }
+
+        .welcome {
+            width: 60%;
+            left: 20%;
+            top: 15vh;
+        }
+
+        .go_down_button {
+            top: 35vh;
+            right: 40%;
+        }
+
+        .about_me {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 2rem;
+            left: 0;
+            top: 86%;
+
+            .profile_pic {
+                margin: 0;
+                width: 25%;
+            }
+        }
+
+        .introduction {
+            width: 80%;
+            height: auto;
+            top: 170vh;
+            right: 10%;
+
+            p {
+                margin-top: 0.5rem;
+                font-size: 1.3rem;
+            }
+            li{
+                font-size: 1.3rem;
+            }
+
+        }
+
+        .street_footer {
+            width: 105%;
+            bottom: 1;
+            left: -1;
+        }
+    }
+}
+
+
+@media (max-aspect-ratio: 67/89) {
+    .home_page {
+        max-height: 220vh;
+
+        .advertising {
+            width: 90%;
+        }
+
+        .welcome {
+            width: 70%;
+            left: 15%;
+        }
+
+        .go_down_button {
+            top: 40vh;
+            right: 35%;
+        }
+
+        .go_down_button:active {
+            .go_down_arrow {
+                animation: go_down_arrow_movement_hover 0.7s linear infinite;
+            }
+        }
+
+        .about_me {
+            top: 87%;
+        }
+
+
+        .introduction {
+            width: 90%;
+            right: 5%;
+            top: 147vh;
+
+            p {
+                font-size: 1.1rem;
+                margin: 0;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+    }
+
+}
+
+@media (max-aspect-ratio: 1/2) {
+    .home_page {
+        .advertising {
+            width: 90%;
+        }
+
+        .welcome {
+            width: 75%;
+            left: 12%;
+        }
+
+        .go_down_button {
+            right: 30%;
+        }
+
+        .about_me {
+            top: 84%;
+            flex-direction: row;
+
+            .links {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .profile_pic {
+                width: 40%;
+            }
+        }
+
+        .introduction {
+            width: 90%;
+            right: 5%;
+            top: 140vh;
+
+            h1 {
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+
+            ul {
+                margin: 0;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+/* -------------------- ANIMATIONS --------------------*/
+@keyframes welcome_movement {
+    0% {
+        transform: translateX(3rem) translateY(0) rotate(10deg) scale(1.2);
+    }
+
+    10% {
+        transform: translateX(-2%) translateY(10%) rotate(3deg) scale(1.5);
+    }
+
+    25% {
+        transform: translateX(4) translateY(-40%) rotate(0deg) scale(1.6);
+    }
+
+    50% {
+        transform: translateX(5rem) translateY(-10px) rotate(-5deg) scale(0.7);
+    }
+
+    75% {
+        transform: translateX(-3rem) translateY(4px) rotate(-10deg) scale(1.2);
+    }
+
+    100% {
+        transform: translateX(0.5) translateX(0) translateY(0) rotate(0deg) scale(1);
+    }
+}
+
+@keyframes letter_1 {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+
+    35% {
+        transform: translateX(0.05%) scale(1.01);
+    }
+
+    60% {
+        transform: translateX(0.5%) scale(1.03);
+    }
+
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes letter_2 {
+    0% {
+        transform: scale(1);
+    }
+
+    35% {
+        transform: scale(1.05);
+    }
+
+    75% {
+        transform: scale(0.98);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes letter_3 {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+
+    35% {
+        transform: translateX(1%);
+    }
+
+    70% {
+        transform: translateX(-1%) scale(0.998);
+    }
+
+    100% {
+        transform: translateX(0%) scale(1);
+    }
+}
+
+@keyframes go_down_cloud_movement {
+    0% {
+        transform: translateX(0) rotate(0deg) scale(1);
+    }
+
+    25% {
+        transform: translateX(-2rem) rotate(-3deg) scale(1.3);
+    }
+
+    50% {
+        transform: translateX(2rem) rotate(-1deg) scale(1.5);
+    }
+
+    75% {
+        transform: translateX(-2rem) rotate(3deg) scale(0.9);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg) scale(1);
+    }
+}
+
+@keyframes go_down_arrow_movement {
+
+    0%,
+    80% {
+        transform: translateY(0);
+
+    }
+
+    87% {
+        transform: translateY(10%);
+    }
+
+    94% {
+        transform: translateY(-1%);
+    }
+
+    97% {
+        transform: translateY(3%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes go_down_arrow_movement_hover {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(13%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

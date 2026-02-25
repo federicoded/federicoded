@@ -8,6 +8,8 @@
         bottom: 0;
         width: 60%;
         z-index: 980;
+        overflow: visible;
+        display: block;
     }
 
     .welcome {
@@ -176,6 +178,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
+        color: #213547;
         right: 10vw;
         top: 140vh;
         align-items: baseline;
@@ -196,11 +199,12 @@
             margin: 0;
             border-radius: 15px;
             padding: 0.7rem;
-            text-decoration-line: underline;
             font-style: italic;
+            text-align: left;
 
             .intro_link {
                 color: #213547;
+                text-decoration: none;
             }
         }
 
@@ -229,7 +233,6 @@
 
 @media (max-aspect-ratio: 38/29) {
     .home_page {
-
         .advertising {
             width: 70%;
         }
@@ -269,7 +272,6 @@
 
 @media (max-aspect-ratio: 1/1) {
     .home_page {
-
         .advertising {
             width: 80%;
         }
@@ -303,10 +305,15 @@
         .introduction {
             width: 80%;
             height: auto;
+            top: 170vh;
             right: 10%;
 
             p {
                 margin-top: 0.5rem;
+                font-size: 1.3rem;
+            }
+            li{
+                font-size: 1.3rem;
             }
 
         }
@@ -345,17 +352,17 @@
         }
 
         .about_me {
-            top: 84%;
+            top: 87%;
         }
 
 
         .introduction {
             width: 90%;
             right: 5%;
-            top: 135vh;
+            top: 147vh;
 
             p {
-                font-size: 0.9rem;
+                font-size: 1.1rem;
                 margin: 0;
                 margin-bottom: 0.5rem;
             }
@@ -397,12 +404,15 @@
         .introduction {
             width: 90%;
             right: 5%;
-            top: 132vh;
+            top: 140vh;
 
             h1 {
                 font-size: 1.5rem;
                 line-height: 1.5rem;
                 margin-bottom: 0.5rem;
+            }
+            p{
+                font-size: 1.2rem;
             }
 
             ul {

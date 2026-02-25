@@ -19,12 +19,12 @@ const Header = (hp: HeaderProps) => {
         <>
             <header className="header">
                 <ul>
-                    <Link className="header_link" data-i18n="home" to="http://federicoguigou.pro">
+                    <Link className="header_link" data-i18n="home" to="/">
                         <motion.li
                             style={{ color }}
                         >Inicio</motion.li>
                     </Link>
-                    <Link className="header_link" to="http://federicoguigou.pro/#/portfolio">
+                    <Link className="header_link" to="/portfolio">
                         <motion.li
                             style={{ color }}
                         >Portfolio</motion.li>

@@ -27,7 +27,7 @@ const Introduction = () => {
                             scale: 0.9
                         }}
                     >
-                        <Link className="intro_link" data-i18n="my_work" to="http://federicoguigou.pro/#/portfolio">
+                        <Link className="intro_link" data-i18n="my_work" to="/portfolio">
                             Mira mis proyectos
                         </Link>
                     </motion.li>
